@@ -1,0 +1,44 @@
+### Unity ###
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+[Aa]ssets/**/[Aa]ssetsStoreTools/
+
+### Visual Studio / Rider / VSCode ###
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.userprefs
+*.unityprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+### Unity generated ###
+*.csproj
+*.sln
+*.slnx
+*.sln.DotSettings
+*.unityproj
+*.tmp
+*.bak
+*.orig
+*.log
+*.stackdump
+
+### OS ###
+[Dd]esktop.ini
+Thumbs.db
+
