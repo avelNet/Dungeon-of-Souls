@@ -14,7 +14,7 @@ public class Stamina : MonoBehaviour
     private float _maxStamina;
 
     private float _decreaseTimer;
-    private float _decreaseTime = 10f;
+    private float _decreaseTime = 10f; 
 
     private bool _isBoosting;
     private bool _staminaOnCooldown;

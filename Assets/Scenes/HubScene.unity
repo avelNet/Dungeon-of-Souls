@@ -1065,6 +1065,7 @@ GameObject:
   - component: {fileID: 779995961}
   - component: {fileID: 779995960}
   - component: {fileID: 779995965}
+  - component: {fileID: 779995966}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1096,8 +1097,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a5ebf4d3a99de4f8acf074203d5946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  _playerSo: {fileID: 11400000, guid: a3f7f0089dc68a94d98b7aec8d3bf972, type: 2}
   _moveSpeed: 5
+  _boostSpeed: 10
 --- !u!50 &779995962
 Rigidbody2D:
   serializedVersion: 5
@@ -1190,6 +1191,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d9f865aea4d13445b27e48d0cfb8cb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
+--- !u!114 &779995966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779995959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a9be2fe12972984ab73a1d2a3b3bce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Stamina
+  _playerSo: {fileID: 11400000, guid: a3f7f0089dc68a94d98b7aec8d3bf972, type: 2}
+  _staminaTime: 2
 --- !u!1 &820930509
 GameObject:
   m_ObjectHideFlags: 0
