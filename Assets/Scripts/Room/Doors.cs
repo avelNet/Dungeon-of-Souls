@@ -17,7 +17,8 @@ namespace Assets.Scripts.Room
 		}
 		public void Open()
 		{
-			_collider.enabled = false;
+            Debug.Log("Открываю дверь " + name);
+            _collider.enabled = false;
 		}
 	}
 }
