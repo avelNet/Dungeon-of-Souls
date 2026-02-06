@@ -9,6 +9,14 @@ public class Room : MonoBehaviour
 
     private bool _roomActive;
 
+    private void Awake()
+    {
+        _doors = new List<Doors>(GetComponentsInChildren<Doors>());
+        _enemiesInRoom = new List<EnemyHealth>(GetComponentsInChildren<EnemyHealth>());
+
+        Debug.Log($"Комната {name}: врагов найдено {_enemiesInRoom.Count}");
+    }
+
     private void OnEnable()
     {
         RoomEvents.OnRoomEntered += OnRoomEntered;

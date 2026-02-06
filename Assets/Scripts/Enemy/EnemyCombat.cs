@@ -6,7 +6,7 @@ public class EnemyCombat : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            GetComponent<EnemyHealth>().Die();
+            GetComponentInParent<EnemyHealth>().Die();
         }
     }
 }

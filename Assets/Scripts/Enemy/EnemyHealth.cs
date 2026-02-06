@@ -3,10 +3,11 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private EnemySO _enemySo;
-    [SerializeField] private EnemyHealth _enemy;
+    private Animator _animator;
     private float _currentHp;
     private void Awake()
     {
+        _animator = GetComponent<Animator>();
         _currentHp = _enemySo.maxHp;
     }
 
@@ -23,8 +24,9 @@ public class EnemyHealth : MonoBehaviour
 
     public void Die()
     {
+        //_animator.SetBool("Died", true);
         Debug.Log("Враг убит");
-        RoomEvents.OnKilledEnemy?.Invoke(this);
         Destroy(gameObject);
+        RoomEvents.OnKilledEnemy?.Invoke(this);
     }
 }
